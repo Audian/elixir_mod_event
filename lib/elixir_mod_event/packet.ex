@@ -47,7 +47,7 @@ defmodule FSModEvent.Packet do
   buffer leftovers and the packets parsed.
   """
   @spec parse(
-          char_list,
+          char_list :: charlist(),
           [FSModEvent.Packet.t()]
         ) :: {charlist(), [FSModEvent.Packet.t()]}
   def parse(char_list, acc \\ []) do
